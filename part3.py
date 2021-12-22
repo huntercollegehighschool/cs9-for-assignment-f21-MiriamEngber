@@ -18,4 +18,9 @@ Enter the height: 3
 
 """
 
-#write your code here 
+#wrin = int(input("Enter a positive integer: "))
+base = int(input("Base of rectangle: "))
+height = int(input("Height of rectangle: "))
+for i in range(1, height + 1):
+  print('*' * base)
+
