@@ -3,7 +3,7 @@
 PART 4
 ******
 
-Write a program that prompts the user to enter a numbers. The program will then go through all the numbers from 1 to the input itself and:
+Write a program that prompts the user to enter a number. The program will then go through all the numbers from 1 to the input itself and:
 
 - print "fizz" if the number is divisible by 3
 - print "buzz" if the number is divisible by 5
@@ -40,3 +40,14 @@ fizz
 """
 
 # write your code here 
+n = int(input("Enter a number: "))
+for i in range(1, n + 1):
+
+  if i % 3 == 0 and i % 5 == 0:
+    print("fizzbuzz")
+  elif i % 3 == 0:
+    print("fizz")
+  elif i % 5 == 0:
+    print("buzz")
+  else:
+    print(i)  
